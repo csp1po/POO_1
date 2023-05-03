@@ -4,7 +4,7 @@
 
 Agora que a aplicação (_app_) faz o que o Rick quer (**Etapa #1**), vamos começar a usar alguns princípios de OO para ter certeza de que ela é flexível e bem projetada.
 
-![joe_bem_projetado](../img_readme/joe_bem_projetado_60.png)
+![joe_bem_projetado](img_readme/joe_bem_projetado_60.png)
 
 
 
@@ -13,7 +13,7 @@ Agora que a aplicação (_app_) faz o que o Rick quer (**Etapa #1**), vamos come
 
 > Vamos nos aprofundar um pouco mais em nossa ferramenta de pesquisa e ver se podemos encontrar algum problema que alguns princípios OO simples possam ajudar a melhorar. Vamos começar dando uma olhada em como funciona o método ``search_guitar()`` na classe ``Inventory``:
 
-![procurando_problemas](../img_readme/procurando_problemas_61.png)
+![procurando_problemas](img_readme/procurando_problemas_61.png)
 
 
 
@@ -42,7 +42,7 @@ Agora que a aplicação (_app_) faz o que o Rick quer (**Etapa #1**), vamos come
 
 > **Observação**: Use uma descrição textual do problema que você está tentando resolver para garantir que seu design esteja alinhado com a funcionalidade pretendida de seu aplicativo.
 
-![misterio_tipo_objeto](../img_readme/misterio_tipo_objeto-63.png)
+![misterio_tipo_objeto](img_readme/misterio_tipo_objeto-63.png)
 
 A tabela abaixo mostra tipos de mistérios.
 
@@ -78,7 +78,7 @@ Tipo        | Descrição Mistério
 
 ## **Corrigindo o problema**
 
-![Frank_Jill_Joe](../img_readme/frank_jill_joe-64.png)
+![Frank_Jill_Joe](img_readme/frank_jill_joe-64.png)
 
 **Frank**, **Jill** e **Joe** se reuniram e fizeram algumas anotações sobre o que discutiram. Veja abaixo.
 
@@ -111,7 +111,7 @@ Tipo        | Descrição Mistério
 
 Observe o diagrama abaixo da classe `Guitar`que Frank, Jill e Joe estavam discutindo e propondo como alterações.
 
-![alterando_classe_guitar](../img_readme/alterando_classe_guitar-66.png)
+![alterando_classe_guitar](img_readme/alterando_classe_guitar-66.png)
 
 
 
