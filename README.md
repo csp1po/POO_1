@@ -5,7 +5,7 @@
 
 > Agora que aprendemos alguns novos princípios de Orientação a Objeto, estamos prontos para tornar o aplicativo do Rick bem projetado e flexível. Aqui é onde paramos e alguns dos problemas que descobrimos:
 
-![rick_search_tool-270-271](../img_readme/rick_search_tool-270-271.png)
+![rick_search_tool-270-271](img_readme/rick_search_tool-270-271.png)
 
 
 
@@ -14,7 +14,7 @@
 Frank, Jill e Joe esquematizaram os próximos procedimentos. E também fizeram algumas anotações sobre o que discutiram. Veja a conversa deles abaixo.
 
 
-![frank_jim_joe-272](../img_readme/frank_jim_joe-272.png)
+![frank_jim_joe-272](img_readme/frank_jim_joe-272.png)
 
 
 * **Frank**: É, ele está estranho. Mas eu não vejo como podemos contorná-lo. Nós temos que permitir, de alguma forma, que os clientes do Rick procurem por cada tipo diferente do instrumento.
@@ -34,14 +34,14 @@ Frank, Jill e Joe esquematizaram os próximos procedimentos. E também fizeram a
 
 Parece bastante claro que há um problema com a maneira como lidamos com as pesquisas dos clientes do Rick. Poderíamos fazer ``InstrumentSpec`` uma classe concreta, mas isso resolveria todos os nossos problemas? Vejamos a figura abaixo.
 
-![closer_look_search_method-273](../img_readme/closer_look_search_method-273.png)
+![closer_look_search_method-273](img_readme/closer_look_search_method-273.png)
 
 
 ### Os benefícios da nossa análise
 
 Vamos pegar o que descobrimos sobre transformar ``InstrumentSpec`` em uma classe concreta e ver se isso melhora o design de ``Inventory``.
 
-![big_change_search_method-274](../img_readme/big_change_search_method-274.png)
+![big_change_search_method-274](img_readme/big_change_search_method-274.png)
 
 
 O código fica assim:
@@ -100,14 +100,14 @@ O método ``search()`` não é a única coisa que dificulta a adição de novos 
 
 Se você tiver alguma ideia de como alterar o aplicativo do Rick para não precisar de todas as subclasses específicas do instrumento, marque essas alterações no diagrama de classe abaixo. Sinta-se à vontade para adicionar ou remover classes e propriedades. Cabe a você melhorar o design do Rick.
 
-![ideas_rick_app-276](../img_readme/ideas_rick_app-276.png)
+![ideas_rick_app-276](img_readme/ideas_rick_app-276.png)
 
 
 ###  As classes estão relacionadas a comportamento!!
 
 Normalmente, cria-se uma subclasse porque o comportamento é diferente da superclasse.
 
-![classes_behavior-278](../img_readme/classes_behavior-278.png)
+![classes_behavior-278](img_readme/classes_behavior-278.png)
 
 ***
 
@@ -135,7 +135,7 @@ Aplique os princípios básicos da OO para adicionar flexibilidade!!!!
 
 > Como o aplicativo do Rick já faz o que precisa (Etapa 1), estamos prontos para tentar tornar seu software mais flexível.
 
-![guys_encapsulation-281](../img_readme/guys_encapsulation-281.png)
+![guys_encapsulation-281](img_readme/guys_encapsulation-281.png)
 
 * **Joe**: Sim, você está falando sobre encapsular o que varia, certo? 
 
@@ -152,7 +152,7 @@ instrumento é o que varia na aplicação.
 
 * **Frank**: E que têm eles? A classe ``Instrument`` tem uma referência a um ``InstrumentSpec` e todas as diferenças de propriedade podem ser tratadas por essas classes. Observe o diagrama de classes abaixo.
 
-![frank_joe_jim_class_diagram-281](../img_readme/frank_joe_jim_class_diagram-281.png)
+![frank_joe_jim_class_diagram-281](img_readme/frank_joe_jim_class_diagram-281.png)
 
 
 ## **A morte de um projeto (decisão)**
@@ -174,7 +174,7 @@ Lembre-se:
 ```
 CODIFIQUE UMA VEZ, VERIFIQUE DUAS (OU MAIS!)
 ```
-![rip_bad_design-282](../img_readme/rip_bad_design-282.png)
+![rip_bad_design-282](img_readme/rip_bad_design-282.png)
 
 
 Mais duas coisas para lembrar sempre também:
@@ -196,15 +196,15 @@ e aprimorá-las, mesmo que isso signifique retroceder.
 
 Vamos eliminar todas as subclasses específicas de instrumentos. Veja o diagrama abaixo.
 
-![good_design_decisions-283](../img_readme/good_design_decisions-283.png)
+![good_design_decisions-283](img_readme/good_design_decisions-283.png)
 
 Provavelmente também precisamos de uma nova propriedade em cada instrumento para nos informar que tipo de instrumento é. Veja o diagrama abaixo.
 
-![new_instrument_type-283](../img_readme/new_instrument_type-283.png)
+![new_instrument_type-283](img_readme/new_instrument_type-283.png)
 
 ### Continuando a verificação do projeto (mais um diálogo entre Frank, Joe e Jill (Parte I)
 
-![some_help_from_jill-284](../img_readme/some_help_from_jill-284.png)
+![some_help_from_jill-284](img_readme/some_help_from_jill-284.png)
 
 * **Joe**: Mas acabamos de fazer isso... tornamos a classe ``Instrument`` concreta e nos livramos de todas as subclasses específicas do instrumento.
 
@@ -227,7 +227,7 @@ que?
 
 Veja o diagrama de classes que eles se referem.
 
-![encapsulate_what_varies-285](../img_readme/encapsulate_what_varies-285.png)
+![encapsulate_what_varies-285](img_readme/encapsulate_what_varies-285.png)
 
 > Como algumas dessas propriedades variam, queremos movê-las para fora da classe ``InstrumentSpec``. Precisamos de uma maneira de nos referir às propriedades e seus valores, mas não ter essas propriedades codificadas dentro dela.
 Alguma ideia de como poderíamos fazer isso?
@@ -243,11 +243,11 @@ Alguma ideia de como poderíamos fazer isso?
 
 Decidimos que usar um dicionário (**Dict**) seria uma ótima maneira de lidar com vários tipos de propriedades e ainda poder adicioná-las facilmente a qualquer momento. Veja o diagrama de classes proposto abaixo.
 
-![class_diagram_with_dict-286](../img_readme/class_diagram_with_dict-286.png)
+![class_diagram_with_dict-286](img_readme/class_diagram_with_dict-286.png)
 
 > Sempre que você visualizar algo que varia, você deve procurar uma maneira de encapsular. No caso de ``InstrumentSpec``, percebemos que as propriedades de um instrumento variam. Veja a figura abaixo.
 
-![dict_from_instrumentspec-287](../img_readme/dict_from_instrumentspec-287.png)
+![dict_from_instrumentspec-287](img_readme/dict_from_instrumentspec-287.png)
 
 ###Dicas Para Guardar
 
@@ -259,13 +259,13 @@ adicionadas à sua aplicação!!!
 
 Vamos, então, dar uma última olhada em como nossas novas classes ``Instrument`` e ``InstrumentSpec`` funcionam na prática. A figura baixo mostra onde estamos com o design agora.
 
-![instrument_instrumentspec_classes-288](../img_readme/instrument_instrumentspec_classes-288.png)
+![instrument_instrumentspec_classes-288](img_readme/instrument_instrumentspec_classes-288.png)
 
 ###A nova aplicação 'flexível' do Rick
 
 Fizemos várias mudanças no aplicativo do Rick... e é fácil esquecer o objetivo do trabalho. Observe o diagrama de classe abaixo e veja como a aplicação dele está muito mais simples agora.
 
-![rick_flexible_app-294](../img_readme/rick_flexible_app-294.png)
+![rick_flexible_app-294](img_readme/rick_flexible_app-294.png)
 
 O código ficou assim:
 
@@ -466,5 +466,5 @@ if __name__ == "__main__":
 
 4. Expanda a aplicação para que seja possível vender saxofones
 
-![inventory_roundup-296](../img_readme/inventory_roundup-296.png)
+![inventory_roundup-296](img_readme/inventory_roundup-296.png)
 
