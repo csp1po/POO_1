@@ -251,7 +251,7 @@ Decidimos que usar um dicionário (**Dict**) seria uma ótima maneira de lidar c
 
 ### Dicas Para Guardar
 
-1. Quando você tiver um conjunto de propriedades que varia em seus objetos, use uma coleção, como um Dict (Dicionário), para
+1. Quando você tiver um conjunto de propriedades que varia em seus objetos, use uma coleção, como um **Dict** (Dicionário), para
 armazená-las dinamicamente!!!!
 
 2. Você removerá vários métodos das suas classes e evitará alterações em seu código quando novas propriedades forem
