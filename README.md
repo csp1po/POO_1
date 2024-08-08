@@ -111,7 +111,7 @@ Normalmente, cria-se uma subclasse porque o comportamento é diferente da superc
 
 ***
 
-####Observação
+#### Observação
 
 Todos os instrumentos - pelo menos da perspectiva do Rick - se comportam da mesma forma. Isso deixa apenas dois motivos para ter subclasses para cada tipo de instrumento:
 
@@ -192,7 +192,7 @@ Nunca tenha medo de examinar suas próprias decisões de design
 e aprimorá-las, mesmo que isso signifique retroceder.
 ```
 
-###Vamos transformar algumas decisões de design ruins  em boas
+### Vamos transformar algumas decisões de design ruins  em boas
 
 Vamos eliminar todas as subclasses específicas de instrumentos. Veja o diagrama abaixo.
 
@@ -249,7 +249,7 @@ Decidimos que usar um dicionário (**Dict**) seria uma ótima maneira de lidar c
 
 ![dict_from_instrumentspec-287](img_readme/dict_from_instrumentspec-287.png)
 
-###Dicas Para Guardar
+### Dicas Para Guardar
 
 1. Quando você tiver um conjunto de propriedades que varia em seus objetos, use uma coleção, como um Dict (Dicionário), para
 armazená-las dinamicamente!!!!
@@ -261,7 +261,7 @@ Vamos, então, dar uma última olhada em como nossas novas classes ``Instrument`
 
 ![instrument_instrumentspec_classes-288](img_readme/instrument_instrumentspec_classes-288.png)
 
-###A nova aplicação 'flexível' do Rick
+### A nova aplicação 'flexível' do Rick
 
 Fizemos várias mudanças no aplicativo do Rick... e é fácil esquecer o objetivo do trabalho. Observe o diagrama de classe abaixo e veja como a aplicação dele está muito mais simples agora.
 
