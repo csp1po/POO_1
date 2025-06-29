@@ -150,7 +150,7 @@ instrumento é o que varia na aplicação.
 
 * **Jim**: Mas... estou totalmente confuso. E as propriedades que variam em cada instrumento?
 
-* **Frank**: E que têm eles? A classe ``Instrument`` tem uma referência a um ``InstrumentSpec` e todas as diferenças de propriedade podem ser tratadas por essas classes. Observe o diagrama de classes abaixo.
+* **Frank**: E que têm eles? A classe ``Instrument`` tem uma referência a um ``InstrumentSpec`` e todas as diferenças de propriedade podem ser tratadas por essas classes. Observe o diagrama de classes abaixo.
 
 ![frank_joe_jim_class_diagram-281](img_readme/frank_joe_jim_class_diagram-281.png)
 
