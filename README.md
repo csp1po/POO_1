@@ -4,7 +4,7 @@
 
 O material está baseado no livro `Use A Cabeça! Análise e Projeto Orientado a Objeto`. Veja a figura abaixo.
 
-![ Capa dos Livros](img_readme/capa_livro.jpg)
+![ Capa dos Livros](img_readme/livro_capa.jpg)
 
 ### Cada `branch` contém uma versão do **Grande Software**
 
